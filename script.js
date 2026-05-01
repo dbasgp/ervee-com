@@ -57,41 +57,5 @@ if (heroProduct) {
   }, { passive: true });
 }
 
-// ========== Contact form ==========
-// AJAX-posts to a Make.com webhook. User stays on the page; we show a green
-// confirmation banner on success.
-function showFormBanner(message, ok = true) {
-  const banner = document.createElement('div');
-  banner.style.cssText = 'position:fixed;top:80px;left:50%;transform:translateX(-50%);background:' + (ok ? '#22c55e' : '#ef4444') + ';color:#fff;padding:14px 24px;border-radius:100px;font-weight:600;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,.15);max-width:90vw;text-align:center;';
-  banner.textContent = message;
-  document.body.appendChild(banner);
-  setTimeout(() => banner.remove(), 8000);
-}
-
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    // Honeypot — if filled, silently drop
-    const honey = contactForm.querySelector('[name="_honey"]');
-    if (honey && honey.value) return;
-
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const fineprint = contactForm.querySelector('.form-fineprint');
-    const originalLabel = btn ? btn.textContent : '';
-    if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
-
-    const data = new FormData(contactForm);
-    try {
-      const res = await fetch(contactForm.action, { method: 'POST', body: data });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      contactForm.reset();
-      if (btn) { btn.textContent = '✓ Sent — thank you'; btn.style.background = '#22c55e'; }
-      if (fineprint) fineprint.textContent = 'Enquiry received. We will reply within one business day.';
-      showFormBanner('✓ Enquiry received — we will reply within one business day.');
-    } catch (err) {
-      if (btn) { btn.textContent = originalLabel || 'Send enquiry'; btn.disabled = false; }
-      showFormBanner('Sorry — something went wrong. Please email dba@dba.sg directly.', false);
-    }
-  });
-}
+// Contact form removed for now — visitors use the office cards above
+// (tel / WhatsApp / email links) to reach Singapore or Hong Kong directly.
