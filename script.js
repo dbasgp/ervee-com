@@ -57,16 +57,26 @@ if (heroProduct) {
   }, { passive: true });
 }
 
-// ========== Quote form submission ==========
-const quoteForm = document.getElementById('quoteForm');
-if (quoteForm) {
-  quoteForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = quoteForm.querySelector('button[type="submit"]');
-    btn.textContent = 'Sent — we will be in touch';
-    btn.style.background = '#1d1d1f';
-    btn.disabled = true;
-    const fineprint = quoteForm.querySelector('.form-fineprint');
-    if (fineprint) fineprint.textContent = 'Thanks — your enquiry has been received.';
+// ========== Contact form ==========
+// Form submits to FormSubmit (formsubmit.co) → dba@dba.sg with cc to dba@dba.hk.
+// Just disable the submit button to prevent double-submits; let the form post normally.
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', () => {
+    const btn = contactForm.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+    }
   });
+}
+
+// Show a confirmation banner if FormSubmit redirected back with ?sent=1
+if (location.search.includes('sent=1')) {
+  const banner = document.createElement('div');
+  banner.style.cssText = 'position:fixed;top:80px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;padding:14px 24px;border-radius:100px;font-weight:600;z-index:1000;box-shadow:0 8px 24px rgba(0,0,0,.15);max-width:90vw;text-align:center;';
+  banner.textContent = '✓ Enquiry received — we will reply within one business day.';
+  document.body.appendChild(banner);
+  setTimeout(() => banner.remove(), 8000);
+  history.replaceState({}, '', location.pathname + location.hash);
 }
