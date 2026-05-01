@@ -593,13 +593,36 @@ nav {
 .partner-card .btn-pill { background: #fff; color: var(--navy); }
 .partner-card .btn-pill:hover { background: var(--gold); color: var(--navy-dark); }
 .pc-note {
-  font-size: 13px;
-  color: rgba(255,255,255,0.6);
-  margin-top: 22px;
-  line-height: 1.8;
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
-.pc-note a { color: #fff; border-bottom: 1px solid rgba(255,255,255,0.3); transition: border-color 0.2s; }
-.pc-note a:hover { border-color: var(--gold); }
+.pc-note-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.pc-region {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 10px 0;
+}
+.pc-region + .pc-region { border-top: 1px solid rgba(255,255,255,0.06); }
+.pc-flag { font-size: 1.2rem; line-height: 1.5; }
+.pc-region-links { display: flex; flex-direction: column; gap: 4px; }
+.pc-region-links a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: color 0.2s, border-color 0.2s;
+}
+.pc-region-links a:hover { color: #fff; border-color: var(--gold); }
 
 /* ========== CASE STUDIES ========== */
 .cases { padding: 140px 0; background: var(--bg-alt); }
