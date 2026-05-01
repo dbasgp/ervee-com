@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "dba-utc20",
+    "model": "DBA-UTC20",
+    "series": "UTC"
+  },
+  {
+    "slug": "dba-utc68",
+    "model": "DBA-UTC68",
+    "series": "UTC"
+  },
+  {
+    "slug": "dba-utc120",
+    "model": "DBA-UTC120",
+    "series": "UTC"
+  },
+  {
+    "slug": "dba-gec68ld-hp",
+    "model": "DBA-GEC68LD-HP",
+    "series": "GEC"
+  },
+  {
+    "slug": "dba-gec145ld-hp",
+    "model": "DBA-GEC145LD-HP",
+    "series": "GEC"
+  },
+  {
+    "slug": "dba-gec280ld",
+    "model": "DBA-GEC280LD",
+    "series": "GEC"
+  },
+  {
+    "slug": "dba-gec400ld",
+    "model": "DBA-GEC400LD",
+    "series": "GEC"
+  },
+  {
+    "slug": "dba-gec550ld",
+    "model": "DBA-GEC550LD",
+    "series": "GEC"
+  },
+  {
+    "slug": "dba-gex75",
+    "model": "DBA-GEX75",
+    "series": "GEX"
+  },
+  {
+    "slug": "dba-gex110",
+    "model": "DBA-GEX110",
+    "series": "GEX"
+  },
+  {
+    "slug": "dba-ge280ld-hp",
+    "model": "DBA-GE280LD-HP",
+    "series": "GE"
+  },
+  {
+    "slug": "dba-ge400ld-hp",
+    "model": "DBA-GE400LD-HP",
+    "series": "GE"
+  },
+  {
+    "slug": "dba-ge550ld-hp",
+    "model": "DBA-GE550LD-HP",
+    "series": "GE"
+  },
+  {
+    "slug": "dba-hc68",
+    "model": "DBA-HC68",
+    "series": "HC"
+  },
+  {
+    "slug": "dba-hc145",
+    "model": "DBA-HC145",
+    "series": "HC"
+  },
+  {
+    "slug": "dba-hc280",
+    "model": "DBA-HC280",
+    "series": "HC"
+  },
+  {
+    "slug": "dba-hc400",
+    "model": "DBA-HC400",
+    "series": "HC"
+  },
+  {
+    "slug": "dba-hc550",
+    "model": "DBA-HC550",
+    "series": "HC"
+  },
+  {
+    "slug": "dba-dd210",
+    "model": "DBA-DD210",
+    "series": "DD"
+  },
+  {
+    "slug": "dba-dd550",
+    "model": "DBA-DD550",
+    "series": "DD"
+  },
+  {
+    "slug": "dba-dd850",
+    "model": "DBA-DD850",
+    "series": "DD"
+  },
+  {
+    "slug": "dba-dh65",
+    "model": "DBA-DH65",
+    "series": "DH"
+  },
+  {
+    "slug": "dba-x65",
+    "model": "DBA-X65",
+    "series": "DH"
+  },
+  {
+    "slug": "dba-c150",
+    "model": "DBA-C150",
+    "series": "DH"
+  }
+]

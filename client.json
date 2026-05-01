@@ -1,0 +1,11 @@
+{
+  "client": "Ervee",
+  "domain": "www.ervee.com",
+  "render_service_id": "srv-d7qf2gm8bjmc73eooch0",
+  "render_service_url": "https://ervee-com.onrender.com",
+  "render_dashboard": "https://dashboard.render.com/static/srv-d7qf2gm8bjmc73eooch0",
+  "github_repo": "https://github.com/dbasgp/ervee-com",
+  "git_working_dir": "/tmp/ervee-com",
+  "status": "placeholder · awaiting design direction",
+  "notes": "Repo + Render deployed. Content TBD."
+}
