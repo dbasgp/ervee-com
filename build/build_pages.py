@@ -543,21 +543,21 @@ def build_page(product):
             </ul>
           </div>
           <div class="fcol">
-            <h4>Singapore</h4>
+            <h4>Singapore HQ</h4>
             <ul>
+              <li><a href="https://dba.sg" target="_blank" rel="noopener">dba.sg</a></li>
+              <li><a href="mailto:dba@dba.sg">dba@dba.sg</a></li>
               <li><a href="tel:+6567729962">+65 6772 9962</a></li>
               <li><a href="https://wa.me/6589859886" target="_blank" rel="noopener">WhatsApp +65 8985 9886</a></li>
-              <li><a href="mailto:dba@dba.sg">dba@dba.sg</a></li>
-              <li><a href="https://dba.sg" target="_blank" rel="noopener">dba.sg</a></li>
             </ul>
           </div>
           <div class="fcol">
-            <h4>Hong Kong</h4>
+            <h4>Hong Kong Office</h4>
             <ul>
+              <li><a href="https://www.dba.hk" target="_blank" rel="noopener">dba.hk</a></li>
+              <li><a href="mailto:dba@dba.hk">dba@dba.hk</a></li>
               <li><a href="tel:+85225411611">+852 2541 1611</a></li>
               <li><a href="https://wa.me/85254880850" target="_blank" rel="noopener">WhatsApp +852 5488 0850</a></li>
-              <li><a href="mailto:dba@dba.hk">dba@dba.hk</a></li>
-              <li><a href="https://www.dba.hk" target="_blank" rel="noopener">dba.hk</a></li>
             </ul>
           </div>
         </div>
