@@ -455,7 +455,7 @@ nav {
 }
 
 /* ========== RANGE LIST ========== */
-.range-list { padding: 140px 0; background: var(--bg-alt); }
+.range-list { padding: 140px 0; background: #fff; }
 .rl-list { display: flex; flex-direction: column; gap: 14px; }
 .rl-row {
   display: grid;
@@ -474,8 +474,7 @@ nav {
   box-shadow: 0 12px 28px rgba(41, 54, 123, 0.08);
 }
 .rl-img {
-  background: var(--bg-alt);
-  border-radius: 12px;
+  background: #fff;
   aspect-ratio: 4/3;
   display: flex; align-items: center; justify-content: center;
   padding: 18px;
@@ -819,7 +818,7 @@ nav {
 .faq-answer p { color: var(--text-muted); font-size: 16px; line-height: 1.7; }
 
 /* ========== CATALOG DOWNLOADS ========== */
-.catalog-downloads { padding: 140px 0; background: var(--bg-alt); }
+.catalog-downloads { padding: 140px 0; background: #fff; }
 .cd-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .cd-card {
   background: #fff;
@@ -834,7 +833,7 @@ nav {
 .cd-card:hover { transform: translateY(-3px); border-color: var(--navy-light); box-shadow: 0 14px 32px rgba(29, 38, 88, 0.10); }
 .cd-photo {
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #f4f5fa 0%, #e9ebf3 100%);
+  background: #fff;
   overflow: hidden;
   display: flex;
   align-items: center;
