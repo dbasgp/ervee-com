@@ -1024,28 +1024,120 @@ footer { background: var(--bg-deep); color: rgba(255,255,255,0.6); padding: 80px
   .rl-row { grid-template-columns: 160px 1fr auto; }
 }
 @media (max-width: 768px) {
-  body { font-size: 16px; }
-  .container, .nav-inner { padding: 0 24px; }
+  body { font-size: 15px; line-height: 1.5; }
+  .container, .nav-inner { padding: 0 20px; }
   .nav-links { display: none; }
   .nav-mobile-btn { display: block; }
-  .top-banner .container { gap: 16px; font-size: 11px; }
-  .tb-item { font-size: 11px; }
-  .hero-split { padding: 60px 0 80px; }
-  .hs-meta { grid-template-columns: 1fr 1fr; gap: 18px; }
-  .marquee-track span { font-size: 11px; }
-  .numbers, .why-dba, .industries, .range-list, .guide, .partner, .cases, .faq, .catalog-downloads, .contact-section { padding: 80px 0; }
-  .num-grid { grid-template-columns: 1fr; }
-  .ind-grid { grid-template-columns: 1fr; }
-  .cd-grid { grid-template-columns: 1fr; }
-  .rl-row { grid-template-columns: 1fr; gap: 16px; padding: 20px; }
-  .rl-img { aspect-ratio: 16/9; max-width: 100%; }
+
+  /* Top banner: stack tight */
+  .top-banner { padding: 8px 0; }
+  .top-banner .container { gap: 8px 16px; font-size: 11px; row-gap: 4px; }
+  .tb-item, .tb-cta { font-size: 11px; }
+
+  /* Nav */
+  .nav-inner { height: 56px; }
+  .logo img { height: 22px; }
+
+  /* Hero — tighter spacing, smaller h1 */
+  .hero-split { padding: 32px 0 48px; }
+  .hs-eyebrow { padding: 6px 12px; font-size: 11px; margin-bottom: 16px; }
+  .hero-split h1 { font-size: clamp(2rem, 9vw, 2.6rem); margin-bottom: 14px; }
+  .hs-sub { font-size: 15px; margin-bottom: 22px; }
+  .hs-actions { gap: 10px; margin-bottom: 28px; }
+  .hs-actions .btn-pill { font-size: 14px; padding: 12px 22px; }
+  .hs-meta { grid-template-columns: 1fr 1fr; gap: 14px 24px; padding-top: 20px; }
+  .hsm-item strong { font-size: 1rem; }
+  .hsm-item span { font-size: 10px; }
+  .hs-grid { gap: 32px; }
+
+  /* Marquee */
+  .marquee { padding: 12px 0; }
+  .marquee-track { gap: 32px; animation-duration: 35s; }
+  .marquee-track span { font-size: 11px; letter-spacing: 0.14em; }
+
+  /* Section padding */
+  .numbers, .why-dba, .industries, .range-list, .guide, .partner, .cases, .faq, .catalog-downloads, .contact-section, .dealer-strip, .brand-bridge { padding: 64px 0; }
+  .section-head { margin-bottom: 40px; }
+  .section-head h2 { font-size: clamp(1.5rem, 6vw, 1.9rem); }
+  .section-head .lead { font-size: 14px; }
+
+  /* Numbers cards */
+  .num-grid { grid-template-columns: 1fr; gap: 12px; }
+  .num-card { padding: 24px 22px; }
+  .num-big { font-size: 1.6rem; margin-bottom: 8px; }
+  .num-card h3 { font-size: 1rem; }
+  .num-card p { font-size: 13px; }
+
+  /* Why DBA blocks */
+  .why-block, .why-block.reverse { grid-template-columns: 1fr; gap: 24px; margin-bottom: 56px; }
+  .why-img { padding: 28px; aspect-ratio: 4/3; border-radius: 16px; }
+  .why-text h3 { font-size: 1.3rem; margin-bottom: 12px; }
+  .why-text p { font-size: 14px; line-height: 1.6; }
+
+  /* Industries */
+  .ind-grid { grid-template-columns: 1fr; border-radius: 14px; }
+  .ind-card { padding: 22px 20px; }
+  .ind-card h3 { font-size: 1rem; }
+  .ind-card p { font-size: 13px; }
+
+  /* Range list rows */
+  .rl-row { grid-template-columns: 1fr; gap: 14px; padding: 18px; border-radius: 14px; }
+  .rl-img { aspect-ratio: 16/9; max-width: 100%; padding: 14px; border-radius: 10px; }
+  .rl-body h3 { font-size: 1.1rem; margin-bottom: 6px; }
+  .rl-body p { font-size: 13px; line-height: 1.5; }
+  .rl-spec { font-size: 11px; }
   .rl-arrow { display: none; }
-  .footer-cols { grid-template-columns: 1fr 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .contact-form-wrap { padding: 28px; }
-  .office-card { padding: 28px; }
-  .why-img { padding: 28px; }
-  .partner-card { padding: 28px; }
+
+  /* Guide */
+  .guide-article h3 { font-size: 1.15rem; margin: 32px 0 12px; }
+  .guide-article p { font-size: 15px; line-height: 1.65; }
+  .guide-cta-text { padding: 20px 22px; font-size: 14px !important; }
+
+  /* Dealer strip */
+  .dealer-strip { padding: 64px 0; }
+  .ds-grid { grid-template-columns: 1fr; gap: 16px; margin-bottom: 32px; }
+  .ds-col { padding: 26px; border-radius: 14px; }
+  .ds-icon { width: 40px; height: 40px; font-size: 1.2rem; margin-bottom: 12px; }
+  .ds-col h3 { font-size: 1.1rem; }
+  .ds-col p { font-size: 13px; line-height: 1.55; }
+  .ds-points li { font-size: 12px; }
+
+  /* Partner */
+  .partner-grid { grid-template-columns: 1fr; gap: 36px; }
+  .partner-points li { padding: 14px 0; }
+  .partner-points li strong { font-size: 0.95rem; }
+  .partner-points li span { font-size: 13px; }
+  .partner-card { padding: 26px; }
+
+  /* Cases */
+  .cs-grid { grid-template-columns: 1fr; gap: 14px; }
+  .cs-card { padding: 22px; }
+  .cs-card h3 { font-size: 1.05rem; }
+  .cs-card p { font-size: 13px; }
+
+  /* FAQ */
+  .faq-item summary { font-size: 0.95rem; padding: 22px 6px; }
+  .faq-answer p { font-size: 14px; }
+
+  /* Catalogs */
+  .cd-grid { grid-template-columns: 1fr; gap: 12px; }
+  .cd-card { padding: 22px; }
+
+  /* Contact */
+  .offices-grid { grid-template-columns: 1fr; gap: 14px; margin-bottom: 0; }
+  .office-card { padding: 26px; border-radius: 16px; }
+  .office-card h3 { font-size: 1.3rem; }
+  .office-flag { font-size: 2rem; }
+  .office-links li { padding: 10px; }
+  .office-links a { font-size: 13px; }
+
+  /* Footer */
+  .footer-top { gap: 36px; padding-bottom: 36px; }
+  .footer-cols { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .footer-brand p { font-size: 13px; }
+  .fcol h4 { font-size: 11px; }
+  .fcol ul li a, .fcol ul li { font-size: 12px; }
+  footer { padding: 56px 0 24px; }
 }
 @media (max-width: 480px) {
   .footer-cols { grid-template-columns: 1fr; }
