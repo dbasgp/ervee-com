@@ -283,8 +283,10 @@ body.product-page { padding-top: 0; }
   object-fit: contain;
   position: relative;
   z-index: 1;
-  mix-blend-mode: screen;
-  filter: brightness(1.1);
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 .ph-banner-text { position: relative; z-index: 1; color: #fff; }
 .ph-banner-eyebrow {
