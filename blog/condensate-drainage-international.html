@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="blog.css?v=20260517" />
+  <link rel="stylesheet" href="blog.css?v=20260518a" />
 </head>
 <body>
 
@@ -72,82 +72,51 @@
 
     <div class="prose">
 
-      <h2>The three patterns</h2>
+      <p>DBA's ceiling dehumidifiers use one of two drainage methods. The method is fixed by the unit, not the project. Specify the method correctly at the M&amp;E stage and there is nothing left to design around.</p>
 
-      <p>Every ceiling install drains by one of three routes.</p>
+      <h2>Single-phase ceiling units: 1.8 m integrated pump</h2>
 
-      <ul>
-        <li><strong>Direct gravity drop:</strong> the unit is above a bathroom, kitchen, or service space with an existing trap or floor drain immediately below. Cleanest route. Use it when available.</li>
-        <li><strong>Pump and traverse:</strong> the unit's integrated condensate pump lifts above the ceiling and pushes the line laterally to a remote drop point.</li>
-        <li><strong>Pump to external tank:</strong> for long lifts or high flows, the unit's pump feeds a small tank with its own larger pump, which handles the building-side lift to a sanitary stack.</li>
-      </ul>
+      <p>Every single-phase ceiling model — UTC20, UTC68, UTC120, plus the single-phase commercial GEC68LD-HP and GEC145LD-HP — ships with an integrated condensate pump rated for 1.8 m of head. The pump handles the lift; gravity handles the rest of the route.</p>
 
-      <h2>Pump head ratings</h2>
+      <h2>Correct routing: rise to a high point, then fall</h2>
 
-      <p>Stated heads on DBA ceiling units:</p>
+      <p>The drain line should leave the unit and rise vertically to a high point at or near the 1.8 m head limit. From that high point, the line falls by gravity to the discharge — typically an existing condensate stack or FCU drain.</p>
 
-      <table>
-        <tr><th>Range</th><th>Pump head</th><th>Typical flow rate</th></tr>
-        <tr><td>UTC20 / 68 / 120</td><td>1.8 m</td><td>0.3–1.0 L/min</td></tr>
-        <tr><td>GEC68LD-HP / 145LD-HP</td><td>1.8 m</td><td>0.5–2.0 L/min</td></tr>
-        <tr><td>GEC280LD / 400LD / 550LD</td><td>5 m</td><td>3–8 L/min</td></tr>
-        <tr><td>GE280LD / 400LD / 550LD</td><td>10 m</td><td>5–10 L/min</td></tr>
-      </table>
-
-      <p>These ratings are total head — vertical lift plus friction in the horizontal run plus bend losses. Budget all three when planning the line.</p>
-
-      <h2>Calculating friction</h2>
-
-      <p>For the standard 16 mm internal-diameter clear hose supplied with most ceiling units:</p>
+      <p>The high point is an inverted-U at the top of the run. It serves two purposes:</p>
 
       <ul>
-        <li>Horizontal run: roughly 5 cm of head per metre at typical condensate flow</li>
-        <li>Each 90° elbow: 10 cm of head</li>
-        <li>Each tee fitting (joining lines): 15 cm of head</li>
+        <li>It breaks any back-siphon from the discharge end — water cannot flow upstream into the unit</li>
+        <li>The downward gravity section can be as long as the building requires, without further pump load</li>
       </ul>
 
-      <p>A worked example: a GEC145LD-HP with 1.8 m pump head, 2 m vertical lift, 6 m horizontal traverse, three 90° elbows.</p>
-
-      <p>Total head budget: 2.0 + (6 × 0.05) + (3 × 0.1) = 2.6 m. Pump head 1.8 m. <strong>Overloaded.</strong> Either reduce the lift, use a larger-bore hose (drops friction), or specify an external pump tank.</p>
+      <p>Dropping the line straight down from the unit and trying to traverse it horizontally is the most common install mistake. Without a high-point break, the line is exposed to back-siphon and the pump fights gravity unnecessarily.</p>
 
       <figure>
         <img src="../images/ceiling-dba-gec68ld-1.jpg" alt="DBA-GEC68LD-HP commercial ceiling unit" />
-        <figcaption>The GEC68/145 share the same internal condensate pump. For installs above 1.5 m lift, plan the route carefully or specify an external pump tank.</figcaption>
+        <figcaption>The single-phase GEC68LD-HP and GEC145LD-HP share the same 1.8 m integrated pump as the UTC range.</figcaption>
       </figure>
 
-      <h2>Code requirements by region</h2>
+      <h2>Three-phase ceiling units: gravity fall</h2>
 
-      <p>Condensate discharge from HVAC and dehumidification equipment is regulated by local plumbing code. The most common requirements:</p>
+      <p>The larger three-phase ceiling models — GEC280LD, GEC400LD, GEC550LD — have no integrated pump. Drainage is gravity-only. The line must slope continuously downward from the unit to the discharge with no rising section.</p>
 
-      <ul>
-        <li><strong>EU (EN 12056):</strong> indirect discharge to a building drain. Air gap recommended; trap mandatory if connected to soil stack.</li>
-        <li><strong>USA (UPC / IPC):</strong> air gap mandatory to building drain. Some jurisdictions require pH neutralization between the unit and PVC drain to protect concrete in slab penetrations. Condensate neutralizers are inexpensive, listed for purpose, and pass inspection.</li>
-        <li><strong>UK (BS EN 16798):</strong> indirect discharge with trap to gully or soil pipe.</li>
-        <li><strong>UAE / KSA (SBC / mechanical code):</strong> drain via floor drain or grease trap; air gap and trap for commercial.</li>
-        <li><strong>Singapore (PUB):</strong> drain via floor trap or sanitary stack with trap and air gap; commercial requires plan check.</li>
-      </ul>
+      <p>This constraint should be confirmed during the M&amp;E coordination stage. A three-phase ceiling unit must be sited where a continuous fall to the discharge is physically possible.</p>
 
-      <p>When in doubt, route to a fixture drain (lavatory, mop sink) via air gap. That detail passes inspection in almost every jurisdiction.</p>
+      <h2>Discharge point</h2>
 
-      <h2>Auxiliary protection</h2>
+      <p>Both methods discharge into an existing condensate route the building already supports — a stack, a floor trap, or an FCU drain. Treat the dehumidifier's drain the same way the project treats fan-coil condensate. Local plumbing codes apply.</p>
 
-      <p>For any install above a finished ceiling, two extra elements pay back many times their cost:</p>
+      <h2>Commissioning</h2>
 
-      <ul>
-        <li><strong>Water-leak sensor</strong> — wired to the unit's leak port if available, or to a standalone alarm. DBA's UTC, GEC, and HC ranges all have a dry-contact input for this.</li>
-        <li><strong>Secondary drip pan</strong> — a small metal or plastic pan under the unit, with its own drain or sensor. Catches a failed primary pump before the ceiling does.</li>
-      </ul>
+      <p>Before sign-off:</p>
 
-      <h2>Insulation</h2>
+      <ol>
+        <li>Run the unit in dehumidify mode for 30 minutes and verify water reaches the discharge</li>
+        <li>For pumped units, observe pump cycling — short bursts spaced apart are normal; continuous running indicates a route problem</li>
+        <li>Inspect the ceiling void after 24 hours of operation — it should be dry</li>
+      </ol>
 
-      <p>In humid climates the drain line will sweat. Insulate the first 1–2 metres of horizontal run with closed-cell foam to avoid drip damage to adjacent ceiling structure. In cold climates, freeze protection becomes the concern for any drain section that exits the conditioned envelope — heat trace or relocate the line indoors.</p>
-
-      <div class="callout">
-        <h4>The 20% margin</h4>
-        <p>Design every drain line so the calculated head is no more than 80% of the pump's rated head. The remaining 20% covers filter loading, biofilm growth in the line, and pump wear. Skip the margin and you are designing for a perfect day on commissioning, not for a working unit at year three.</p>
-      </div>
-
-      <p>For projects where the drain path is constrained, ask us — we have routed condensate around some unusual obstacles, and the answer is usually solvable.</p>
+      <p>For project-specific drainage queries, the engineering team will sketch a working route from a floor plan and section.</p>
 
     </div>
 
