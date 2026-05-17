@@ -158,15 +158,21 @@
 }
 .kb-row:hover { padding-left: 12px; }
 .kb-row-img {
-  aspect-ratio: 21 / 9;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 10px;
   background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
 }
 .kb-row-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   transition: transform 0.6s var(--ease);
 }
 .kb-row:hover .kb-row-img img { transform: scale(1.05); }
@@ -233,10 +239,12 @@
   padding: 0 32px;
 }
 .article-cover img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 560px;
+  width: auto;
   height: auto;
-  aspect-ratio: 21 / 9;
-  object-fit: cover;
+  margin: 0 auto;
   border-radius: 18px;
   background: var(--bg-alt);
 }
