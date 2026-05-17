@@ -148,24 +148,26 @@
 
 .kb-row {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 32px;
   padding: 32px 0;
   border-bottom: 1px solid var(--line);
   text-decoration: none;
   color: inherit;
+  align-items: center;
   transition: padding 0.25s var(--ease);
 }
 .kb-row:hover { padding-left: 12px; }
 .kb-row-img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 10px;
-  background: var(--bg-alt);
+  background: #fff;
+  border: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px;
+  padding: 18px;
 }
 .kb-row-img img {
   max-width: 100%;
@@ -241,12 +243,14 @@
 .article-cover img {
   display: block;
   max-width: 100%;
-  max-height: 560px;
+  max-height: 520px;
   width: auto;
   height: auto;
   margin: 0 auto;
   border-radius: 18px;
-  background: var(--bg-alt);
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 24px;
 }
 
 .prose {
