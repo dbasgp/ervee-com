@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static Pressure Budgets for Ducted Dehumidifiers | Ervee Blog</title>
+  <meta name="description" content="Read the fan curve, size the duct, avoid silent capacity loss. A static pressure design method for ducted dehumidifiers in commercial and residential projects." />
+  <meta name="keywords" content="dehumidifier static pressure, ducted dehumidifier sizing, fan curve dehumidifier, duct design HVAC, DBA UTC GEC ducting" />
+  <link rel="canonical" href="https://ervee.com/blog/ducting-static-pressure-design.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Static pressure budgets for ducted dehumidifiers" />
+  <meta property="og:description" content="Read the fan curve, size the duct, avoid silent capacity loss." />
+  <meta property="og:url" content="https://ervee.com/blog/ducting-static-pressure-design.html" />
+  <meta property="og:image" content="https://ervee.com/images/ceiling-dba-utc120-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Static pressure budgets for ducted dehumidifiers","image":"https://ervee.com/images/ceiling-dba-utc120-1.jpg","author":{"@type":"Organization","name":"Ervee"},"publisher":{"@type":"Organization","name":"Ervee","logo":{"@type":"ImageObject","url":"https://ervee.com/images/logo-ervee.svg"}},"datePublished":"2026-01-16","mainEntityOfPage":"https://ervee.com/blog/ducting-static-pressure-design.html"}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <div class="top-banner">
+    <div class="container">
+      <span class="tb-item">🌐 Always in stock · fast worldwide shipping</span>
+      <span class="tb-item">⚙ CE · CB · ISO 9001</span>
+      <span class="tb-cta"><a href="../#contact">Talk to us →</a></span>
+    </div>
+  </div>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="../" class="logo"><img src="../images/logo-ervee.svg" alt="Ervee" /></a>
+      <ul class="nav-links">
+        <li><a href="../#products">Products</a></li>
+        <li><a href="../#industries">Industries</a></li>
+        <li><a href="../#why-dba">Why DBA</a></li>
+        <li><a href="./">Blog</a></li>
+        <li><a href="../#partner">Partnership</a></li>
+        <li><a href="../#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-mobile-btn" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <ul class="mobile-nav" id="mobileNav">
+      <li><a href="../#products">Products</a></li>
+      <li><a href="../#industries">Industries</a></li>
+      <li><a href="../#why-dba">Why DBA</a></li>
+      <li><a href="../#partner">Partnership</a></li>
+      <li><a href="./">Blog</a></li>
+      <li><a href="../#faq">FAQ</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header class="article-hero">
+      <div class="container">
+        <p class="article-meta">Ducting<span class="dot">·</span>8 min read<span class="dot">·</span>January 2026</p>
+        <h1>Static pressure budgets for ducted dehumidifiers.</h1>
+        <p class="lead">A ceiling dehumidifier's fan has a limit. Burn more pressure on duct, bends, and grilles than the fan can deliver, and the unit quietly under-performs forever without ever throwing a fault.</p>
+      </div>
+    </header>
+
+    <div class="article-cover">
+      <img src="../images/ceiling-dba-utc120-1.jpg" alt="DBA-UTC120 ducted ceiling dehumidifier" />
+    </div>
+
+    <div class="prose">
+
+      <p>Most "this unit is not pulling its rated capacity" tickets come down to a fan that ran out of static pressure. The compressor is fine, the refrigerant charge is correct, the sensor is honest — the fan is just not pushing enough air across the coil for the rated extraction. Specifying the duct properly at design time avoids the problem entirely.</p>
+
+      <h2>The fan curve in plain language</h2>
+
+      <p>Each unit has a maximum external static pressure (ESP) — the resistance the fan can overcome and still deliver rated airflow. DBA's commercial ranges publish these on the datasheet:</p>
+
+      <table>
+        <tr><th>Model</th><th>Airflow at rated ESP</th><th>Max ESP</th></tr>
+        <tr><td>DBA-UTC68</td><td>500 CMH</td><td>30 Pa</td></tr>
+        <tr><td>DBA-UTC120</td><td>890 CMH</td><td>40 Pa</td></tr>
+        <tr><td>DBA-GEC68LD-HP</td><td>500 CMH</td><td>80 Pa</td></tr>
+        <tr><td>DBA-GEC145LD-HP</td><td>1,200 CMH</td><td>120 Pa</td></tr>
+        <tr><td>DBA-GEC280LD</td><td>1,700 CMH</td><td>150 Pa</td></tr>
+      </table>
+
+      <p>Stay below the max ESP and you get rated capacity. Go over and airflow drops; the coil sees less air; less moisture is removed per hour; the room stalls above setpoint.</p>
+
+      <h2>Budgeting the loss</h2>
+
+      <p>Add up the static pressure cost of every component between the unit and the served zone:</p>
+
+      <ul>
+        <li><strong>Insulated flexible duct:</strong> 1.5–2.5 Pa/m at typical airflows</li>
+        <li><strong>Rigid spiral duct:</strong> 0.5–1.0 Pa/m</li>
+        <li><strong>90° bend in flex (sharp):</strong> 10–15 Pa</li>
+        <li><strong>90° bend in rigid (long radius):</strong> 3–5 Pa</li>
+        <li><strong>Supply grille at design flow:</strong> 5–15 Pa depending on style</li>
+        <li><strong>Return grille + filter (clean):</strong> 15–25 Pa</li>
+        <li><strong>Return grille + filter (loaded):</strong> 40–60 Pa</li>
+      </ul>
+
+      <p>Always design with the filter at its dirty-end pressure, not its clean-day reading. A clean install that hits its capacity number perfectly on day one will slip into trouble six months later if the budget was set on a fresh filter.</p>
+
+      <h2>A worked example</h2>
+
+      <p>A DBA-UTC120 (40 Pa ESP) serving an open-plan office. Trunk is 4 m of 250 mm flex with three 90° bends. Two branches at 200 mm flex, each 3 m with two bends, ending in a 4-way diffuser. Return is 600 × 200 mm via a filtered grille.</p>
+
+      <p>Budget:</p>
+
+      <ul>
+        <li>Trunk friction: 4 m × 2 Pa/m = 8 Pa</li>
+        <li>Trunk bends: 3 × 12 Pa = 36 Pa — already over budget</li>
+      </ul>
+
+      <p>This will not work. Either change the trunk to rigid (4 m × 0.75 Pa/m + 3 × 4 Pa = 15 Pa), or pick a unit with higher ESP. A DBA-GEC68LD-HP at 80 Pa ESP is the cleaner solution if rated capacity is met by 68 L/day instead of 120 L/day.</p>
+
+      <figure>
+        <img src="../images/ceiling-dba-gec145ld-2.jpg" alt="DBA-GEC145LD-HP ducted ceiling unit detail" />
+        <figcaption>The GEC range adds substantial fan headroom — 80 to 150 Pa ESP — opening up longer duct runs and more branches without losing capacity.</figcaption>
+      </figure>
+
+      <h2>Sizing the duct cross-section</h2>
+
+      <p>Keep design velocity below 4 m/s. Above that you trade pressure loss and noise for nothing useful. Convert airflow (CMH) to velocity at a given diameter, and step up the duct until you are under 4 m/s. As a quick guide, the right minimum diameter for round duct:</p>
+
+      <table>
+        <tr><th>Airflow</th><th>Minimum diameter</th></tr>
+        <tr><td>500 CMH</td><td>200 mm</td></tr>
+        <tr><td>900 CMH</td><td>250 mm</td></tr>
+        <tr><td>1,200 CMH</td><td>300 mm</td></tr>
+        <tr><td>1,700 CMH</td><td>350 mm</td></tr>
+      </table>
+
+      <h2>Designing for balance</h2>
+
+      <p>When a trunk feeds two or more branches, air takes the path of least resistance. Two branches of equal length and grille type self-balance to roughly equal flow. Unequal branches do not. Fit a manual damper on every branch; balance by reading flow at each diffuser with an anemometer at commissioning.</p>
+
+      <div class="callout">
+        <h4>The 70-90% rule</h4>
+        <p>Aim for total calculated static pressure between 70% and 90% of the unit's max ESP. Below 70% you bought more fan than you needed. Above 90% you are buying performance loss as filters age.</p>
+      </div>
+
+      <p>For projects where the duct routing is fixed and the unit selection is open, send us the duct schematic with lengths, diameters, bends, and grille selections. We will return a matched DBA model and an ESP budget tally — usually within a working day.</p>
+
+    </div>
+
+    <section class="article-cta">
+      <div class="container">
+        <p class="eyebrow center">Project enquiries</p>
+        <h3>Want the duct calc done for you?</h3>
+        <p>Send the duct schematic. We will return a matched unit and a written ESP budget.</p>
+        <a href="../#contact" class="btn-pill">Talk to us</a>
+      </div>
+    </section>
+
+    <section class="related">
+      <div class="container">
+        <h3>Keep reading</h3>
+        <div class="related-grid">
+          <a href="ceiling-dehumidifier-install-international.html" class="related-card">
+            <p class="tag">Installation</p>
+            <h4>Installing a ceiling dehumidifier across markets</h4>
+          </a>
+          <a href="dehumidifier-sizing-by-application.html" class="related-card">
+            <p class="tag">Sizing</p>
+            <h4>Sizing dehumidifiers by application, not by floor area</h4>
+          </a>
+          <a href="condensate-drainage-international.html" class="related-card">
+            <p class="tag">Drainage</p>
+            <h4>Condensate drainage: head, pumps, and code compliance</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/logo-ervee.svg" alt="Ervee" class="footer-logo-img" />
+          <p>DBA dehumidifiers, engineered for every climate. Always in stock. Shipped worldwide.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="fcol">
+            <h4>Range</h4>
+            <ul>
+              <li><a href="../products/dba-utc20.html">UTC · Ultra-slim ceiling</a></li>
+              <li><a href="../products/dba-gec145ld-hp.html">GEC · Commercial ceiling</a></li>
+              <li><a href="../products/dba-gex75.html">GEX · Portable LGR</a></li>
+              <li><a href="../products/dba-ge280ld-hp.html">GE · Industrial floor</a></li>
+              <li><a href="../products/dba-hc145.html">HC · Humidity control</a></li>
+              <li><a href="../products/dba-dd550.html">DD · Desiccant rotary</a></li>
+            </ul>
+          </div>
+          <div class="fcol">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="../#why-dba">Why DBA</a></li>
+              <li><a href="../#industries">Industries</a></li>
+              <li><a href="./">Blog</a></li>
+              <li><a href="../#partner">Become a dealer</a></li>
+              <li><a href="../#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="fcol">
+            <h4>Singapore HQ</h4>
+            <ul>
+              <li><a href="https://dba.sg" target="_blank" rel="noopener">dba.sg</a></li>
+              <li><a href="mailto:dba@dba.sg">dba@dba.sg</a></li>
+              <li><a href="tel:+6567729962">+65 6772 9962</a></li>
+            </ul>
+          </div>
+          <div class="fcol">
+            <h4>Hong Kong Office</h4>
+            <ul>
+              <li><a href="https://www.dba.hk" target="_blank" rel="noopener">dba.hk</a></li>
+              <li><a href="mailto:dba@dba.hk">dba@dba.hk</a></li>
+              <li><a href="tel:+85225411611">+852 2541 1611</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Ervee. International showcase for DBA dehumidifier technology. All product specifications subject to change without prior notice.</div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
