@@ -108,15 +108,5 @@
     "slug": "dba-dh65",
     "model": "DBA-DH65",
     "series": "DH"
-  },
-  {
-    "slug": "dba-x65",
-    "model": "DBA-X65",
-    "series": "DH"
-  },
-  {
-    "slug": "dba-c150",
-    "model": "DBA-C150",
-    "series": "DH"
   }
 ]

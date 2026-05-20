@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ervee-com.onrender.com/sitemap.xml
+Sitemap: https://ervee.com/sitemap.xml

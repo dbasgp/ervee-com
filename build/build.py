@@ -6,7 +6,7 @@ from pathlib import Path
 from datetime import date
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = "https://ervee-com.onrender.com"  # update when custom domain is live
+SITE_URL = "https://ervee.com"  # custom domain is live
 
 # ============================================================
 # SHARED SERIES DATA
