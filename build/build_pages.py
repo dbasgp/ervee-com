@@ -571,20 +571,19 @@ def build_page(product):
 # ============================================================
 def render_sitemap():
     today = date.today().isoformat()
+    # Fragment (#section) URLs are ignored by search engines — only real pages here.
     urls = [
         (SITE_URL + "/", "1.0"),
-        (SITE_URL + "/#products", "0.9"),
-        (SITE_URL + "/#industries", "0.8"),
-        (SITE_URL + "/#why-dba", "0.8"),
-        (SITE_URL + "/#partner", "0.8"),
-        (SITE_URL + "/#guide", "0.8"),
-        (SITE_URL + "/#catalogs", "0.7"),
-        (SITE_URL + "/#faq", "0.7"),
-        (SITE_URL + "/#contact", "0.7"),
     ]
+    blog_dir = ROOT / "blog"
+    if blog_dir.is_dir():
+        urls.append((SITE_URL + "/blog/", "0.8"))
+        for f in sorted(blog_dir.glob("*.html")):
+            if f.name != "index.html":
+                urls.append((f"{SITE_URL}/blog/{f.name}", "0.8"))
     for p in PRODUCTS:
         urls.append((f"{SITE_URL}/{slug_to_path(p['slug'])}", "0.9"))
-    body = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/0.9/sitemap.xsd">\n'
+    body = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for u, prio in urls:
         body += f"  <url><loc>{u}</loc><lastmod>{today}</lastmod><priority>{prio}</priority></url>\n"
     body += "</urlset>\n"
